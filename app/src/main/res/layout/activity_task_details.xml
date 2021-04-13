@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="@color/BLUE"
+    android:scrollbars="none"
+    tools:context=".TaskDetailsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/registerTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="Task"
+            app:fontFamily="@font/changa_bold"
+            android:textColor="@color/colorWhite"
+            android:textSize="70dp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/t_name"
+            android:hint="Task name"
+            android:padding="10dp"
+            android:textColorHint="@color/colorWhite"
+            android:textColor="@color/colorWhite"
+            android:layout_marginTop="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:layout_below="@+id/registerTv"
+
+            ></TextView>
+
+        <TextView
+            android:id="@+id/t_description"
+            android:hint="Task description"
+            android:padding="10dp"
+            android:textColorHint="@color/colorWhite"
+            android:textColor="@color/colorWhite"
+            android:layout_marginTop="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:layout_below="@+id/registernameeditext"
+
+            ></TextView>
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:padding="10dp"
+            android:text="Submission date:" />
+
+        <TextView
+            android:id="@+id/tdeadline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/registerphoneeditext"
+            android:layout_marginTop="5dp"
+            android:hint="19/07/20"
+            android:inputType="textEmailAddress"
+            android:padding="10dp"
+            android:textColor="@color/colorWhite"
+
+            android:textColorHint="@color/colorWhite"></TextView>
+
+        <TextView
+            android:id="@+id/t_status"
+            android:layout_below="@+id/registermaieditext"
+            android:hint="Status"
+            android:padding="10dp"
+            android:textColorHint="@color/colorWhite"
+            android:textColor="@color/colorWhite"
+            android:layout_marginTop="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            ></TextView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/statuschangebutton_initialised"
+                android:layout_gravity="center"
+                android:textColor="@color/BLUE"
+                android:layout_weight="1"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:background="@drawable/bg_custom_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/registerpassword"></Button>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+</ScrollView>

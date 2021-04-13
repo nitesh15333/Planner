@@ -1,0 +1,40 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/BLUE</item>
+        <item name="colorPrimaryDark">@color/BLACK</item>
+        <item name="colorAccent">@color/colorWhite</item>
+    </style>
+
+
+    <style name="AppThemeNo" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/BLUE</item>
+        <item name="colorPrimaryDark">@color/BLACK</item>
+        <item name="colorAccent">@color/colorWhite</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+    <style name="AppCompatAlertDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/BLUE</item>
+        <item name="android:textColorPrimary">@color/BLUE</item>
+        <item name="android:background">@color/colorWhite</item>
+    </style>
+
+    <style name="AppThemeProfile" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/BLUE</item>
+        <item name="colorPrimaryDark">@color/BLACK</item>
+        <item name="colorAccent">@color/colorWhite</item>
+    </style>
+
+
+
+
+</resources>

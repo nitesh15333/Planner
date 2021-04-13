@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardUseCompatPadding="true"
+    app:cardCornerRadius="2dp"
+    app:cardElevation="5dp"
+    android:padding="3dp"
+    app:cardBackgroundColor="@color/EXTRA_LIGHT_GRAY"
+    android:background="@drawable/bg_custom_button"
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:padding="5dp">
+            <TextView
+                android:id="@+id/nameTv"
+                android:layout_width="match_parent"
+                android:textSize="20dp"
+                android:layout_height="wrap_content"
+                android:text="Task Name"
+                android:fontFamily="@font/changa"
+                android:textColor="@color/BLUE">
+
+            </TextView>
+            <TextView
+                android:id="@+id/descriptionTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Description"
+                android:fontFamily="@font/changa"
+                android:textColor="@color/BLUE">
+
+            </TextView>
+            <TextView
+                android:id="@+id/deadlineTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Deadline Date"
+                android:fontFamily="@font/changa"
+                android:textColor="@color/BLUE">
+
+            </TextView>
+            <TextView
+                android:id="@+id/tstatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No Progress"
+                android:fontFamily="@font/changa"
+                android:textColor="@color/BLUE">
+
+            </TextView>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/BLUE"
+    android:padding="20dp"
+    tools:context=".LoginActivity">
+
+
+    <TextView
+        android:id="@+id/logintv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login."
+        android:gravity="left"
+        android:textColor="@color/colorWhite"
+        android:textSize="70dp"
+        app:fontFamily="@font/changa_bold">
+
+    </TextView>
+    <TextView
+        android:id="@+id/welcomeback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome back!."
+        android:gravity="left"
+        android:textColor="@color/colorWhite"
+        android:textSize="13dp"
+        app:fontFamily="@font/changa_bold"
+        android:layout_below="@+id/logintv">
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/loginmaieditext"
+        android:hint="Email"
+        android:padding="10dp"
+        android:textColorHint="@color/colorWhite"
+        android:textColor="@color/colorWhite"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:layout_below="@+id/welcomeback"
+
+        ></EditText>
+    <EditText
+        android:id="@+id/loginpassword"
+        android:layout_below="@+id/loginmaieditext"
+        android:textColor="@color/colorWhite"
+        android:hint="Password"
+        android:padding="10dp"
+        android:textColorHint="@color/colorWhite"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+
+        ></EditText>
+    <Button
+        android:id="@+id/loginbuttn"
+        android:layout_centerHorizontal="true"
+        android:text="LOGIN"
+        android:padding="20dp"
+        android:background="@drawable/bg_custom_button"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:textColor="@color/BLUE"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loginpassword"></Button>
+
+    <TextView
+        android:id="@+id/forgotpasswordTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Forgot Password ?Recover"
+        android:layout_below="@id/loginbuttn"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/colorWhite"></TextView>
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/googleloginbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/forgotpasswordTv"
+        android:visibility="gone"></com.google.android.gms.common.SignInButton>
+
+    <TextView
+        android:id="@+id/donot_have_a_accnt_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Do not have a account? Register Now"
+        android:textAlignment="center"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:textColor="@color/colorWhite"
+        ></TextView>
+
+
+</RelativeLayout>
